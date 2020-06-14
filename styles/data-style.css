@@ -1,0 +1,63 @@
+#data{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+    margin: 20px;
+    width: 80%;
+    height: 80%;
+   
+}
+.singleDataBlock{
+    margin-top: 30px;
+    border-top: 2px solid rgb(43, 43, 43);
+    display: flex;
+    justify-content: space-around;
+   
+}
+#headSection{
+    width: 80%;
+    border-bottom: 3px solid red;
+    margin-top: 40px;
+    display: flex;
+}
+span{
+    width: 33%;
+}
+.heading{
+
+    width: 33%;
+    
+}
+
+
+@media(max-width: 1000px){
+    span{
+        width: 100%;
+    }
+    nav a{
+        width: 50%;
+        font-size: 16px;
+    }
+    #headSection{
+        flex-flow: column wrap;
+    }
+    .heading{
+        width: 100%;
+    }
+}
+@media(max-width: 800px){
+    
+    span{
+        width: 100%;
+    }
+    nav a{
+        width: 100%;
+        font-size: 22px;
+        
+    }
+    .singleDataBlock{
+        flex-flow: column wrap;
+        text-align: center;
+    }
+}
+
